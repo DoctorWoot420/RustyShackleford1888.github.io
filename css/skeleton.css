@@ -443,7 +443,7 @@ div#banner  {
     position: relative;
     width: 100vw;
     max-width: 1024px;
-    height: 250px;
+    height: 240px;
     background-image: url("../images/banner.png");
     background-repeat: no-repeat; 
     background-position: center bottom; /* Center the background image */
@@ -505,9 +505,38 @@ div#banner  {
   transform: scaleY(-1);
 }
 
+#navbar {
+  width:100%;
+  overflow: hidden;
+  text-align:center;
+  background-color: #000;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  left:0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky {
+  padding-top: 45px;
+}
+
+.stickycontent {
+  padding-top:85px;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
 ul.intro_navbar {
   list-style: none; 
-  margin: 10px auto 25px;
+  margin: 20px auto 25px;
   padding: 0;
   overflow: hidden;
   font-size: 2rem;
