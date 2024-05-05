@@ -84,9 +84,12 @@
       float: none;
     }
     .six.columns iframe{
-      width: 90%;
       min-height: 360px;
     }
+  }
+
+  .six.columns {
+    text-align:center;
   }
 
   /* Offsets */
@@ -536,7 +539,7 @@ a.tooltip div {
     display:none; 
     padding:14px 20px;
     margin-top:-30px;
-    margin-left:28px;
+    margin-left:-50px;
     min-width: 350px;
     max-width: 550px; 
     line-height: 16px;
@@ -553,16 +556,20 @@ a.tooltip:hover div span.block {
   display:block; }
 
 div#crafting_tooltips a.tooltip div {
-    margin-left: 150px;  }
+    margin-left: 10px;  }
 
 div#crafting_tooltips a {
     display: block;
     margin: 5px !important;
     float: left;  
-    color: #fff; }
+    color: #fff;
+  }
 
 div#crafting_tooltips img {
-    vertical-align: middle; }   
+    vertical-align: middle;
+    width:28px;
+    padding-right:5px;
+  }   
 
 .diablo_amber, .diablo_subclasses {
   color: #FFC200 !important;
