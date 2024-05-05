@@ -429,7 +429,7 @@ div#topbar {
   width: 100vw;
   max-width: 2560px;
   height: 60px;
-  background-image: url("images/topbar_2560med.png");
+  background-image: url("../images/topbar_2560med.png");
   background-repeat: no-repeat;
   background-position: center top;
   z-index: 15 !important;
@@ -441,7 +441,7 @@ div#banner  {
     width: 100vw;
     max-width: 1024px;
     height: 250px;
-    background-image: url("images/banner.png");
+    background-image: url("../images/banner.png");
     background-repeat: no-repeat; 
     background-position: center bottom; /* Center the background image */
     z-index: 1 !important; 
@@ -474,7 +474,7 @@ div#banner  {
   font-weight: 600;
   font-size: 3rem;
   padding: 10px 0px 0px;
-  background-image: url("images/button_bg69.png");
+  background-image: url("../images/button_bg69.png");
   background-repeat: no-repeat;
   background-position: left middle;
   text-align: center; /* Center the text horizontally */
@@ -488,7 +488,7 @@ div#banner  {
   width: 100vw;
   max-width: 2560px;
   height: 60px;
-  background-image: url("images/topbar_2560med.png");
+  background-image: url("../images/topbar_2560med.png");
   background-repeat: no-repeat;
   background-position: center top;
   z-index: 15 !important;
@@ -623,7 +623,7 @@ div.neph_valor_row {
 
 div.horadric_cube_container {
   position: relative; 
-  background: url("/images/cube.gif");
+  background: url("../images/cube.gif");
   width: 322px;
   height: 434px; }
 
