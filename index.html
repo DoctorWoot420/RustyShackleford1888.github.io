@@ -561,12 +561,12 @@
       <div class="row">
         <div class="eight columns" style="text-align: justify;">
           <p>
-              Instead of the frustrating trade-off between min-maxing of your character stats and having enough inventory space to handle loot, Resurgence restricts the player to only carry six different Unique charms. These charms are found by killing specific Superunique monsters as you progress through the game. These Unique charms start off as blank slates - each having a set number of ‘free’ stat slots the player can fill by imbuing them with charm components that drop randomly throughout their adventures. This enables incredible customization, with over one hundred different sigils, glyphs and ankhs providing an array of properties to empower your character.
+              Instead of the frustrating trade-off between min-maxing of your character stats and having enough inventory space to handle loot, Resurgence restricts the player to only carry three different customizable unique charms. These charms are found by killing specific superunique monsters as you progress through the game. These Unique charms start off as blank slates - each having a set number of ‘free’ stat slots the player can fill by imbuing them with charm components they select. This enables incredible customization, with over one hundred different sigils, glyphs and ankhs providing an array of properties to empower your character.
               <br />
               <br />
-              To get an idea of how this process works, click "Transmute" in the cube to the right and watch the Charm gain a stat.
+              To get an idea of how this process works, click "Transmute" in the cube to the right and watch the Charm gain a stat.  For further info check out the <a href="http://diablo2resurgence.wikia.com/wiki/Charms">charms page</a> on the wiki.
             </p>
-            <div class="item_hover">
+            <div class="item_hover" style="padding-top:20px;">
               <a href="javascript:void(0)" class="tooltip"><img src="images/glyph_garnet.png" />
                 <div>
                   <span class="diablo_white block">
@@ -611,7 +611,7 @@
                     Adds The Following Property to A Charm:
                   </span>              
                   <span class="diablo_blue block">
-                  +18-24 Cold Damage<br />(Uses 1 Secondary Stat Slot)
+                  +36-48 Cold Damage<br />(Uses 1 Secondary Stat Slot)
                   </span>
                 </div>
               </a>
@@ -627,7 +627,7 @@
                     Adds The Following Property to A Charm:
                   </span>              
                   <span class="diablo_blue block">
-                    6-8% Faster Cast Rate<br />(Uses 1 Secondary Stat Slot)
+                    4-5% Faster Cast Rate<br />(Uses 1 Secondary Stat Slot)
                   </span>
                 </div>
               </a>
@@ -643,7 +643,7 @@
                     Adds The Following Property to A Charm:
                   </span>              
                   <span class="diablo_blue block">
-                  5% Pierce<br />(Uses 1 Tertiary Stat Slot)
+                  3% Projectile Pierce<br />(Uses 1 Tertiary Stat Slot)
                   </span>
                 </div>
               </a>
@@ -659,7 +659,7 @@
                     Adds The Following Property to A Charm:
                   </span>              
                   <span class="diablo_blue block">
-                  2% Chance to Gain 10 Seconds of Empower When Struck<br />(Uses 1 Tertiary Stat Slot)
+                  3% Chance to Gain 5 Seconds of Empower (+6 skills) on Kill<br />(Uses 1 Tertiary Stat Slot)
                   </span>
                 </div>
               </a>
@@ -675,20 +675,17 @@
                     Adds The Following Property to A Charm:
                   </span>              
                   <span class="diablo_blue block">
-                  +1 Maximum Fire Resistance<br />(Uses 1 Tertiary Stat Slot)
+                  2% Max Fire Resistance<br />(Uses 1 Tertiary Stat Slot)
                   </span>
                 </div>
               </a>
           </div>
-          <span class="caption">Hover over these items to see their description.</span><br />
-          <p>
-            <a href="http://diablo2resurgence.wikia.com/wiki/Charms">For more information check out the Charms pages on the Resurgence wiki.</a>
-          </p>        
+          <span class="caption">Hover over these items to see their description.</span><br />       
         </div>
         <div class="four columns">
           <div class="horadric_cube_container">'
             <div id="crafting_cube_ingredients">
-                <div class="horadric_cube_ingredients" style= "top: 143px; left: 120px;" />
+                <div class="horadric_cube_ingredients" style= "top: 143px; left: 120px;">
                   <a href="#" class="tooltip"><img src="images/gojes_talisman.png" />
                     <div>
                       <span class="diablo_unique block">
@@ -707,7 +704,7 @@
                   </a>            
                 </div>
 
-                <div class="horadric_cube_ingredients" style= "top: 171px; left: 150px;" />
+                <div class="horadric_cube_ingredients" style= "top: 171px; left: 150px;">
                   <a href="#" class="tooltip"><img src="images/sigil_gheeds_fortune.png" />
                     <div>
                       <span class="diablo_unique block">
@@ -726,29 +723,30 @@
                   </a>            
                 </div>
               </div>
-              <div id="crafting_cube_results" class="horadric_cube_ingredients" style="display: none;" />
-                <div class="horadric_cube_ingredients" style= "top: 143px; left: 120px;" />
-                <a href="#" class="tooltip"><img src="images/gojes_talisman.png" />
-                  <div>
-                    <span class="diablo_unique block">
-                      Eldritch Knowledge<br />
-                      Small Charm
-                    </span>
-                    <span class="diablo_white block">
-                      Keep in Inventory to Gain Bonus
-                    </span>
-                    <span class="diablo_blue block">
-                      30% Better Chance of Finding Magical Items<br />
-                      Available Primary Stat Slots: 2<br />
-                      Available Secondary Stat Slots: 0<br />
-                      Available Tertiary Stat Slots: 1<br />
-                    </span>
-                  </div>
-                </a>            
+              
+              <div id="crafting_cube_results" class="horadric_cube_ingredients" style="display: none;">
+                <div class="horadric_cube_ingredients" style= "top: 143px; left: 120px;">
+                  <a href="#" class="tooltip"><img src="../images/gojes_talisman.png" />
+                    <div>
+                      <span class="diablo_unique block">
+                        Eldritch Knowledge<br />
+                        Small Charm
+                      </span>
+                      <span class="diablo_white block">
+                        Keep in Inventory to Gain Bonus
+                      </span>
+                      <span class="diablo_blue block">
+                        30% Better Chance of Finding Magical Items<br />
+                        Available Primary Stat Slots: 2<br />
+                        Available Secondary Stat Slots: 0<br />
+                        Available Tertiary Stat Slots: 1<br />
+                      </span>
+                    </div>
+                  </a>            
                 </div>
               </div>
 
-            <div class="horadric_cube_ingredients" style= "width: 38px; height: 38px; top: 260px; left: 145px;" />
+            <div class="transmute" style= "width: 38px; height: 38px; top: 260px; left: 145px;" />
             <a href="javascript:void(0)" onclick="javascript:transmute_crafting();" class="tooltip"><img src="images/transmute.gif" />
               <div>
                 <span class="diablo_white block">
@@ -761,33 +759,31 @@
         </div>      
       </div>   
 
-      
+      <div class="row separator" ></div>
+
       <div class="row" style="text-align: center; margin-top: 50px;"><h3>Storage and Quality of Life</h3></div>
       <div class="row">
         <div class="nine columns" style="text-align: justify;">
           <p>
-            The stash size has has been greatly increased and crafting materials can now be stored in the Horadric Catalyst (Runes and Gems) or Horadric Vessels (Crystals and other Crafting Regeants).
+            Many quality of life upgrades are included within resurgence to help you spend more time farming:
           </p>
-            <a href="http://diablo2resurgence.wikia.com/wiki/Crafting_Quality_of_Life_Items">For more information check out the Crafting Quality of Life page on the Resurgence wiki.</a>
+          <ul>
+            <li>Increased inventory, stash, and cube size</li>
+            <li>Stackable currency items</li>
+            <li>Built-in loot filter & maphack with many QOL features</li>
+            <li>The Horadric Catalyst</li>
+          </ul>
+          <p>The Horadric Catalyst is a special item that allows you to disenchant uniques, sets, runes, and gems into essence.  This essence can be used to create different runes and gems, as introducing a unique item gambling mechanic.<Br />Learn more on the <a href="http://diablo2resurgence.wikia.com/wiki/Crafting_Quality_of_Life_Items">Quality of Life</a> wiki page.</a>
         </div>
         <div class="three columns" style="text-align: center;">
-              <a href="javascript:void(0)" class="tooltip" style="margin-right: 25px; margin-left: 25px;"><img src="images/vessel_bcrystal.gif" />
+              <a href="javascript:void(0)" class="tooltip" style="margin-right: 25px; margin-left: 25px;"><img src="images/stacked_prisms.png" />
                 <div>
-                  <span class="diablo_unique block">
-                    Horadric Vessel
-                  </span>
-                  <span class="diablo_blue block">
-                    Can Hold the Following Item Type:
-                  </span>
-                  <span class="diablo_orange block">
-                    Blessed Crystal
-                  </span>
                   <span class="diablo_white block">
-                    <br /><br />
-                    Quantity: 37
+                    All currency types are stackable
                   </span>
                 </div>
               </a>
+              <br /><br />
               <a href="javascript:void(0)#" class="tooltip" style="margin-right: 25px; margin-left: 25px;"><img src="images/catalyst.gif" />
                 <div>
                   <span class="diablo_unique block">
@@ -798,15 +794,13 @@
                   </span>
                   <span class="diablo_white block">
                     <br /><br />
-                    Gem Essence: 12<br />
+                    Radiant Essence: 1650<br />
+                    Gem Essence: 320<br />
                     Greater Rune Essence: 5<br />
-                    Lesser Rune Essence: 359<br />
+                    Lesser Rune Essence: 1280<br />
                   </span>
                 </div>
               </a>
-            <span class="caption">
-              Hover over the Horadric Vessel and Catalyst for the item descriptions.
-            </span>
         </div>
       </div>        
 
@@ -1024,6 +1018,11 @@
         navbar.classList.remove("sticky");
         content.classList.remove("stickycontent")
       }
+    }
+
+    function transmute_crafting() {
+      document.getElementById("crafting_cube_ingredients").style.display = "none";
+      document.getElementById("crafting_cube_results").style.display = "block";
     }
     </script>
 <!-- End Document

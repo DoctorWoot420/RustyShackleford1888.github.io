@@ -510,6 +510,7 @@ div#banner  {
   overflow: hidden;
   text-align:center;
   background-color: #000;
+  z-index:10;
 }
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
