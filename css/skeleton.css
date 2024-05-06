@@ -42,14 +42,14 @@
 /* For devices larger than 400px */
 @media (min-width: 400px) {
   .container {
-    width: 85%;
+    width: 90%;
     padding: 0; }
 }
 
 /* For devices larger than 550px */
 @media (min-width: 550px) {
   .container {
-    width: 80%; }
+    width: 90%; }
   .column,
   .columns {
     margin-left: 4%; }
@@ -76,16 +76,31 @@
 
   .one-half.column                { width: 48%; }
 
-  /* Media query for screens smaller than 1360px */
-  @media (max-width: 1360px) {
+  /* Media query for screens smaller than 1000px */
+  @media (max-width: 1000px) {
+    /* Switch to top/bottom layout */
+    .eight.columns {
+      width: 100%;
+      float: none;
+      margin-bottom:20px;
+    }
+  }
+
+  /* Media query for screens smaller than 1200px */
+  @media (max-width: 1200px) {
     /* Switch to top/bottom layout */
     .six.columns {
       width: 100%;
       float: none;
+      margin-bottom:20px;
     }
     .six.columns iframe{
-      min-height: 360px;
+      max-height: 180px;
     }
+  }
+
+  .six.columns iframe{
+    max-height:360px;
   }
 
   .six.columns {
@@ -585,17 +600,17 @@ a.tooltip:hover div{
 a.tooltip:hover div span.block {
   display:block; }
 
-div#crafting_tooltips a.tooltip div {
+div.crafting_tooltips a.tooltip div {
     margin-left: 10px;  }
 
-div#crafting_tooltips a {
+div.crafting_tooltips a {
     display: block;
     margin: 5px !important;
-    float: left;  
     color: #fff;
+    text-align:left;
   }
 
-div#crafting_tooltips img {
+div.crafting_tooltips img {
     vertical-align: middle;
     width:28px;
     padding-right:5px;
@@ -658,6 +673,10 @@ span.caption {
 div.neph_valor_row {
   margin-bottom: 50px;  }
 
+.neph_valor_row td {
+  width:25%;
+}
+
 div.horadric_cube_container {
   position: relative; 
   background: url("../images/cube.gif");
@@ -665,7 +684,11 @@ div.horadric_cube_container {
   height: 434px; }
 
 div.horadric_cube_ingredients, div.transmute {
-  position: absolute; }
+  position: absolute;
+}
+div.horadric_cube_ingredients img {
+  height:
+}
 
 /* Crafting
 –––––––––––––––––––––––––––––––––––––––––––––––– */

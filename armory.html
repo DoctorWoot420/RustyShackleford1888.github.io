@@ -59,16 +59,6 @@ function copyToClipboard(event) {
     // var armorTypes = ["Helms", "Armor", "Shields", "Gloves", "Boots", "Belts"];
     // var weaponTypes = ["Axes", "Bows", "Crossbows", "Quivers", "Daggers", "Javelins", "Maces", "Clubs", "Polearms", "Scepters", "Spears", "Staves", "Hammers", "Maces", "Polearms", "Staves", "Swords", "Throwing Axes", "Throwing Knives", "Wands"];
     var itemTiers = ["Normal", "Exceptional", "Elite", "Uber"]
-  
-    $(document).scroll(function() {
-        if ($(this).scrollTop() <= 300) {
-            $("#floating-nav-content").slideUp(400);
-        } else {
-            $("#floating-nav-content").slideDown(600);
-        }
-
-    });
-
     $("document").ready(function () {
         $.getJSON("js/armory.json", function (data) {
             $.each(data.itemCats, function (key, value) {
@@ -1274,87 +1264,90 @@ If (alvl > 99) then alvl=99<br />`;
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
-    <div class="row" style="position: relative; left:-32px;">
-      <div class="u-full-width" id="topbar" style="position: fixed;">
+    <div class="row">
+      <div class="u-full-width" id="topbar">
       </div>
     </div>
-    <div class="row" style="position: relative; left:-32px;">
+    <div class="row">
       <div class="u-full-width" id="banner">
       </div>
     </div>
-    <div style="width:100%; text-align:center;">
-      <ul class="intro_navbar">
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="/armory.html">Armory</a></li>
-        <li><a href="/crafting.html">Crafting</a></li>
-        <li><a href="http://diablo2resurgence.wikia.com/wiki/Diablo2Resurgence_Wikia" target="_blank">Wiki</a></li>
-        <li><a href="https://discord.gg/0cDYwWrMLIImycvz" target="_blank">Discord</a></li>
-      </ul>
-    </div>
     <div class="row">
-      <div class="u-full-width">
-        <h1 style="text-align: center;">Resurgence Armory</h1>
-        <div id="armoryNav">
-          <ul id="armoryMainNav">
-          </ul>
-        </div>
-        
-          <div id="armorySubNav">
-          </div>
+      <div id="navbar">
+        <ul class="intro_navbar">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="armory.html">Armory</a></li>
+          <li><a href="crafting.html">Crafting</a></li>
+          <li><a href="http://diablo2resurgence.wikia.com/wiki/Diablo2Resurgence_Wikia" target="_blank">Wiki</a></li>
+          <li><a href="https://discord.gg/0cDYwWrMLIImycvz" target="_blank">Discord</a></li>
+          <li><a href="https://github.com/DoctorWoot420/resurgence-launcher/releases/download/v1.0.0/Resurgence.Launcher.msi" target="_blank">Download</a></li>
+        </ul>
       </div>
-
-         <div id="floating-nav-content">
-          <div style="width:100%; text-align:center;">
-            <ul class="intro_navbar">
-              <li><a href="index.html">Armory</a></li>
-              <li><a href="https://www.reddit.com/r/Diablo2Resurgence/comments/5p75ey/resurgence_13_how_to_install_launch_the_game/">Download Launcher</a></li>
-              <li><a href="https://discord.gg/0cDYwWrMLIImycvz">Discord</a></li>
-              <li><a href="https://www.reddit.com/r/Diablo2Resurgence">Subreddit</a></li>
-              <li><a href="http://diablo2resurgence.wikia.com/wiki/Diablo2Resurgence_Wikia">Wiki</a></li>
-              <li><a href="crafting.html">Crafting</a></li>
+    </div>
+    <div id="content">
+      <div class="row">
+        <div class="u-full-width">
+          <h1 style="text-align: center;">Resurgence Armory</h1>
+          <div id="armoryNav">
+            <ul id="armoryMainNav">
             </ul>
           </div>
-        </div>
-
-    </div>
-
-
-    <div class="row separator"></div>
-
-    <div class="row" style="text-align: center;"></div>
-    <div class="row">
-      <div class="u-full-width">
-        <div id="armoryContent">
-        </div>
-      </div> 
-    </div>       
-
-
-    <div class="row separator" ></div>
-
-
-    <div class="row" style="text-align: center; font-size:1rem;">
-        <div>
-          <p>
-            Diablo 2 Resurgence is an unofficial modification for Diablo 2: Lord of Destruction with absolutely no commercial elements.<br /> 
-          All trademarks referenced herein are the properties of their respective owners.
-          <p>
-            Battle.net®<br />
-            ©1996 - 2014 Blizzard Entertainment, Inc. All rights reserved. Battle.net and Blizzard Entertainment are trademarks or registered trademarks of Blizzard Entertainment, Inc. in the U.S. and/or other countries.
-          </p>
-          <p>
-            Diablo® II<br />
-            ©2000 Blizzard Entertainment, Inc. All rights reserved. Diablo and Blizzard Entertainment are trademarks or registered trademarks of Blizzard Entertainment, Inc. in the U.S. and/or other countries.
-          </p>
-          <p>
-            Diablo® II: Lord of Destruction®<br />
-            ©2001 Blizzard Entertainment, Inc. All rights reserved. Diablo, Lord of Destruction and Blizzard Entertainment are trademarks or registered trademarks of Blizzard Entertainment, Inc. in the U.S. and/or other countries.
-          </p>
+          
+            <div id="armorySubNav">
+            </div>
         </div>
       </div>
+      <div class="row separator"></div>
+
+      <div class="row" style="text-align: center;"></div>
+      <div class="row">
+        <div class="u-full-width">
+          <div id="armoryContent">
+          </div>
+        </div> 
+      </div>    
+      <div class="row separator" ></div>
+
+
+      <div class="row" style="text-align: center; font-size:1rem;">
+          <div>
+            <p>
+              Diablo 2 Resurgence is an unofficial modification for Diablo 2: Lord of Destruction with absolutely no commercial elements.<br /> 
+            All trademarks referenced herein are the properties of their respective owners.
+            <p>
+              Battle.net®<br />
+              ©1996 - 2014 Blizzard Entertainment, Inc. All rights reserved. Battle.net and Blizzard Entertainment are trademarks or registered trademarks of Blizzard Entertainment, Inc. in the U.S. and/or other countries.
+            </p>
+            <p>
+              Diablo® II<br />
+              ©2000 Blizzard Entertainment, Inc. All rights reserved. Diablo and Blizzard Entertainment are trademarks or registered trademarks of Blizzard Entertainment, Inc. in the U.S. and/or other countries.
+            </p>
+            <p>
+              Diablo® II: Lord of Destruction®<br />
+              ©2001 Blizzard Entertainment, Inc. All rights reserved. Diablo, Lord of Destruction and Blizzard Entertainment are trademarks or registered trademarks of Blizzard Entertainment, Inc. in the U.S. and/or other countries.
+            </p>
+          </div>
+        </div>
+    </div>
   </div>
-  <div id="footer">
-  </div>
+  <!-- Sticky the navigation -->
+  <script>
+    window.onscroll = function() {myFunction()};
+    
+    var navbar = document.getElementById("navbar");
+    var content = document.getElementById("content");
+    var sticky = navbar.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset >= sticky - 40) {
+        navbar.classList.add("sticky")
+        content.classList.add("stickycontent")
+      } else {
+        navbar.classList.remove("sticky");
+        content.classList.remove("stickycontent")
+      }
+    }
+    </script>
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
